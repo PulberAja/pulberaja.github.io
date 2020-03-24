@@ -1,47 +1,40 @@
-<!doctype html>
-<!--[if lte IE 9]>
-<html lang="en" class="oldie">
-<![endif]-->
-<!--[if gt IE 9]><!-->
-<html lang="en">
-<!--<![endif]-->
-<head>
+<html lang="en" class="android chrome80 js js"><!--<![endif]--><head>
 <meta charset="utf-8">
-<meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="AbWSXFDUBk5xvSPr2XN3XAvyWK1lCQiie9wlfXUXJbhe0gWZeJifXYByf7ERu98DXn1tRUndKmy+No6Nd5sn1w==" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="AbWSXFDUBk5xvSPr2XN3XAvyWK1lCQiie9wlfXUXJbhe0gWZeJifXYByf7ERu98DXn1tRUndKmy+No6Nd5sn1w==">
 
-<title>CodePen - Typing effect using JavaScript - Day 10 of #30Days30Projects </title>
-<link rel="stylesheet" media="screen" href="https://static.codepen.io/assets/fullpage/fullpage-4de243a40619a967c0bf13b95e1ac6f8de89d943b7fc8710de33f681fe287604.css" />
-<link rel="stylesheet" media="all" href="https://static.codepen.io/assets/global/global-a95b93667d4c3efaa9fd3204567225fd3a76cdefc4a42d44529a0d72d6a3928d.css" />
-<link rel="stylesheet" media="screen" href="https://static.codepen.io/assets/packs/css/everypage-525dd650.css" />
-<link rel="stylesheet" media="all" href="https://static.codepen.io/assets/page/page-2de247a1d3c290a78a5ab5a736253033cac2fafe9c6a6fd558a9d44bdb9a5a14.css" />
-<link rel="stylesheet" media="all" href="https://static.codepen.io/assets/editor/editor-4b9455e47e680eb3ba4d576bce3169777f15a82bd0a30b719d5c5a229055432f.css" />
-<link href='https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic' rel='stylesheet'>
+<title>Typing effect using JavaScript - Day 10 of #30Days30Projects </title>
+<link rel="stylesheet" media="screen" href="https://static.codepen.io/assets/fullpage/fullpage-4de243a40619a967c0bf13b95e1ac6f8de89d943b7fc8710de33f681fe287604.css">
+<link rel="stylesheet" media="all" href="https://static.codepen.io/assets/global/global-a95b93667d4c3efaa9fd3204567225fd3a76cdefc4a42d44529a0d72d6a3928d.css">
+<link rel="stylesheet" media="screen" href="https://static.codepen.io/assets/packs/css/everypage-525dd650.css">
+<link rel="stylesheet" media="all" href="https://static.codepen.io/assets/page/page-2de247a1d3c290a78a5ab5a736253033cac2fafe9c6a6fd558a9d44bdb9a5a14.css">
+<link rel="stylesheet" media="all" href="https://static.codepen.io/assets/editor/editor-4b9455e47e680eb3ba4d576bce3169777f15a82bd0a30b719d5c5a229055432f.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic" rel="stylesheet">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@CodePen">
 <meta name="twitter:title" content="Typing effect using JavaScript - Day 10 of #30Days30Projects ">
-<meta name="twitter:description" content="This is a part of my #30Days30Projects challenge.  the text is taken from Google&#39;s careers website....">
+<meta name="twitter:description" content="This is a part of my #30Days30Projects challenge.  the text is taken from Google's careers website....">
 <meta name="twitter:image" content="https://screenshot.codepen.io/3784256.LYEOqjd.b172c125-8d32-453e-be60-2d88d81106b9.png">
 <meta property="og:image" content="https://codepen.io/sheikh_ishaan/pen/LYEOqjd/image/large.png" itemprop="thumbnailUrl">
 <meta property="og:title" content="Typing effect using JavaScript - Day 10 of #30Days30Projects ">
 <meta property="og:url" content="https://codepen.io/sheikh_ishaan/details/LYEOqjd">
 <meta property="og:site_name" content="CodePen">
-<meta property="og:description" content="This is a part of my #30Days30Projects challenge.  the text is taken from Google&#39;s careers website....">
-<link rel="alternate" type="application/json+oembed" href="https://codepen.io/api/oembed?url=https%3A%2F%2Fcodepen.io%2Fsheikh_ishaan%2Fpen%2FLYEOqjd&format=json" title="Typing effect using JavaScript - Day 10 of #30Days30Projects " />
-<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta property="og:description" content="This is a part of my #30Days30Projects challenge.  the text is taken from Google's careers website....">
+<link rel="alternate" type="application/json+oembed" href="https://codepen.io/api/oembed?url=https%3A%2F%2Fcodepen.io%2Fsheikh_ishaan%2Fpen%2FLYEOqjd&amp;format=json" title="Typing effect using JavaScript - Day 10 of #30Days30Projects ">
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
 <meta name="apple-mobile-web-app-title" content="CodePen">
-<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
-<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
-<script>/* Firefox needs this to prevent FOUC. Wow. */</script>
-</head>
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+<script async="" crossorigin="anonymous" src="https://edge.fullstory.com/s/fs.js"></script><script>/* Firefox needs this to prevent FOUC. Wow. */</script>
+<script charset="utf-8" src="https://static.codepen.io/assets/packs/js/18-34657a03997d87aee6b6.chunk.js"></script><script charset="utf-8" src="https://static.codepen.io/assets/packs/js/firebase-78354cbf16de63431b3a.chunk.js"></script></head>
 <body class="fullpage logged-in sidebar-false">
-<header id="main-header" class="main-header"></header>
+
 <div class="oldie-header">
 <a href="https://codepen.io/sheikh_ishaan/pen/LYEOqjd">Edit Pen</a>
 </div>
 <div id="result-iframe-wrap" role="main">
-<iframe id="result" src="https://cdpn.io/sheikh_ishaan/fullpage/LYEOqjd" sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation allow-same-origin allow-scripts" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; microphone; midi; payment; vr" allowTransparency="true" allowpaymentrequest="true" allowfullscreen="true" class="result-iframe"></iframe>
+<iframe id="result" src="https://cdpn.io/sheikh_ishaan/fullpage/LYEOqjd" sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation allow-same-origin allow-scripts" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; microphone; midi; payment; vr" allowtransparency="true" allowpaymentrequest="true" allowfullscreen="true" class="result-iframe"></iframe>
 </div>
 <div id="full-view-ad"></div>
 <input type="hidden" id="init-data" value="{&quot;__browser&quot;:{&quot;device&quot;:&quot;unknown&quot;,&quot;mobile&quot;:true,&quot;name&quot;:&quot;chrome&quot;,&quot;platform&quot;:&quot;android&quot;,&quot;version&quot;:&quot;80&quot;},&quot;__analytics&quot;:{&quot;controllerActionName&quot;:&quot;show_secure_full_page&quot;,&quot;controllerName&quot;:&quot;fullpage&quot;,&quot;enabled&quot;:true},&quot;__remote_addr&quot;:&quot;112.215.240.28&quot;,&quot;__CPDATA&quot;:{&quot;domain_iframe&quot;:&quot;https://cdpn.io&quot;,&quot;host&quot;:&quot;codepen.io&quot;,&quot;iframe_allow&quot;:&quot;accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; microphone; midi; payment; vr&quot;,&quot;iframe_sandbox&quot;:&quot;allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation allow-same-origin allow-scripts&quot;},&quot;__env&quot;:&quot;production&quot;,&quot;__turnOffJS&quot;:false,&quot;__constants&quot;:{&quot;grid_iframe_sandbox_attributes&quot;:&quot;allow-scripts allow-pointer-lock allow-same-origin&quot;},&quot;__svg_sprite&quot;:&quot;/svg_sprite?v=9637ff09&quot;,&quot;__user&quot;:{&quot;anon&quot;:false,&quot;base_url&quot;:&quot;/pulberaja/&quot;,&quot;current_team_id&quot;:0,&quot;current_team_hashid&quot;:&quot;YdEzGn&quot;,&quot;hashid&quot;:&quot;XbKJAb&quot;,&quot;id&quot;:3811668,&quot;itemType&quot;:&quot;user&quot;,&quot;name&quot;:&quot;PulberAja&quot;,&quot;owner_id&quot;:&quot;XbKJAbYdEzGn&quot;,&quot;paid&quot;:false,&quot;tier&quot;:0,&quot;username&quot;:&quot;pulberaja&quot;},&quot;__firestore&quot;:{&quot;config&quot;:{&quot;apiKey&quot;:&quot;AIzaSyBgLAe7N_MdFpuVofMkcQLGwwhUu5tuxls&quot;,&quot;authDomain&quot;:&quot;codepen-store-production.firebaseapp.com&quot;,&quot;databaseURL&quot;:&quot;https://codepen-store-production.firebaseio.com&quot;,&quot;disabled&quot;:false,&quot;projectId&quot;:&quot;codepen-store-production&quot;},&quot;token&quot;:&quot;eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJodHRwczovL2lkZW50aXR5dG9vbGtpdC5nb29nbGVhcGlzLmNvbS9nb29nbGUuaWRlbnRpdHkuaWRlbnRpdHl0b29sa2l0LnYxLklkZW50aXR5VG9vbGtpdCIsImNsYWltcyI6eyJvd25lcklkIjoiWGJLSkFiWWRFekduIiwiYWRtaW4iOmZhbHNlfSwiZXhwIjoxNTg1MDc3NDkzLCJpYXQiOjE1ODUwNzM4OTMsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLThva3lsQGNvZGVwZW4tc3RvcmUtcHJvZHVjdGlvbi5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsInN1YiI6ImZpcmViYXNlLWFkbWluc2RrLThva3lsQGNvZGVwZW4tc3RvcmUtcHJvZHVjdGlvbi5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsInVpZCI6IlhiS0pBYiJ9.dtMDCwuPNUor9d-Yy5Ke2TAg3Qo-TzoBRjhmjPaAhmJZNmAq2lxmCZRhLk46-EtRPIyd2jvfcqkWuHlLW3k6mjNu6GGHzAwtGJayqN-9qhEJBD_9tiwerls5KoEZ_FwHfnwb_fCPlwd5byyAa0a8VRaQgZUD43HAXTGnPJQrmyi4asgMEaHtlUzudIvduHl-GjFOSlSymUqYXLW27axzYTmOcmuOYDaZfldaG4SwNb5HdSwPoqTFtWCkuBPmNmdBZyR_TyspPN8xW1JxXs_DPkUYbQyQEjDQRKHH_zZ-p50eXVLZZNJWrVJoq6h3Ifjyk_fXZKNiLOkTDW4r0RPtUg&quot;},&quot;__graphql&quot;:{&quot;data&quot;:{&quot;sessionUser&quot;:{&quot;id&quot;:&quot;XbKJAb&quot;,&quot;name&quot;:&quot;PulberAja&quot;,&quot;avatar80&quot;:&quot;https://gravatar.com/avatar/0dfe4b9afa21a6f52021b77c042188fe?s=80&amp;d=https://static.codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png&quot;,&quot;avatar512&quot;:&quot;https://gravatar.com/avatar/0dfe4b9afa21a6f52021b77c042188fe?s=512&amp;d=https://static.codepen.io/assets/avatars/user-avatar-512x512-6e240cf350d2f1cc07c2bed234c3a3bb5f1b237023c204c782622e80d6b212ba.png&quot;,&quot;canCreatePosts&quot;:false,&quot;currentContext&quot;:{&quot;id&quot;:&quot;XbKJAb&quot;,&quot;baseUrl&quot;:&quot;/pulberaja&quot;,&quot;title&quot;:&quot;PulberAja&quot;,&quot;name&quot;:&quot;PulberAja&quot;,&quot;avatar80&quot;:&quot;https://gravatar.com/avatar/0dfe4b9afa21a6f52021b77c042188fe?s=80&amp;d=https://static.codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png&quot;,&quot;avatar512&quot;:&quot;https://gravatar.com/avatar/0dfe4b9afa21a6f52021b77c042188fe?s=512&amp;d=https://static.codepen.io/assets/avatars/user-avatar-512x512-6e240cf350d2f1cc07c2bed234c3a3bb5f1b237023c204c782622e80d6b212ba.png&quot;,&quot;username&quot;:&quot;pulberaja&quot;,&quot;contextType&quot;:&quot;USER&quot;,&quot;projectLimitations&quot;:{&quot;projects&quot;:1,&quot;usedProjects&quot;:0,&quot;__typename&quot;:&quot;ProjectLimitations&quot;},&quot;privateByDefault&quot;:false,&quot;__typename&quot;:&quot;User&quot;},&quot;currentTeamId&quot;:null,&quot;baseUrl&quot;:&quot;/pulberaja&quot;,&quot;username&quot;:&quot;pulberaja&quot;,&quot;admin&quot;:false,&quot;anon&quot;:false,&quot;pro&quot;:false,&quot;verified&quot;:true,&quot;teams&quot;:[],&quot;permissions&quot;:{&quot;canCreatePrivate&quot;:false,&quot;canUploadAssets&quot;:false,&quot;__typename&quot;:&quot;UserPermissions&quot;},&quot;__typename&quot;:&quot;User&quot;}}},&quot;__item&quot;:&quot;{\&quot;id\&quot;:42112111,\&quot;hashid\&quot;:\&quot;LYEOqjd\&quot;,\&quot;itemType\&quot;:\&quot;pen\&quot;,\&quot;owner_id\&quot;:\&quot;BBKQAdYdEzGn\&quot;,\&quot;user_id\&quot;:3784256,\&quot;slug_hash\&quot;:\&quot;LYEOqjd\&quot;,\&quot;private\&quot;:false,\&quot;slug_hash_private\&quot;:\&quot;4adeeae1a3833865a889acd8c900482b\&quot;}&quot;,&quot;__profiled&quot;:{&quot;id&quot;:3784256,&quot;hashid&quot;:&quot;BBKQAd&quot;,&quot;name&quot;:&quot;Ishaan Sheikh&quot;,&quot;username&quot;:&quot;sheikh_ishaan&quot;,&quot;type&quot;:&quot;user&quot;,&quot;is_team&quot;:false,&quot;base_url&quot;:&quot;/sheikh_ishaan&quot;},&quot;__pageType&quot;:&quot;full&quot;}">
@@ -53,5 +46,6 @@
 <script src="https://static.codepen.io/assets/packs/js/2-c436f0936df2975d7112.chunk.js"></script>
 <script src="https://static.codepen.io/assets/packs/js/everypage-9700f07c91305eaae4a8.js"></script>
 <script src="https://static.codepen.io/assets/editor/full/full_page_renderer-a8be422e43b5954dbe3f06dc7cd9f3f50f93ea87e1ff05c0680e7718ad800c6a.js"></script>
-</body>
-</html>
+
+
+</body></html>
