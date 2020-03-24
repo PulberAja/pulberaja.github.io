@@ -1,10 +1,10 @@
 <html lang="en"><head>
 <meta charset="UTF-8">
-<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<link rel="apple-touch-icon" type="image/png" href="https://i.ibb.co/ZTttQ7Y/unnamed-1.png">
 <meta name="apple-mobile-web-app-title" content="CodePen">
-<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
-<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
-<title>CodePen - Packery Infinite-Scroll Images-Loaded JSON Scrolling Image Gallery giong Hover Menu Settings localStorage Categories Pluggable</title>
+<link rel="shortcut icon" type="image/x-icon" href="https://i.ibb.co/ZTttQ7Y/unnamed-1.png">
+<link rel="mask-icon" type="" href="https://i.ibb.co/ZTttQ7Y/unnamed-1.png" color="#111">
+<title>PulberAja - GitHub</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -241,7 +241,7 @@ h2 {
 
 
 
-<h1>Imagini Arcanum</h1>
+<h1>PulberAja</h1>
 
 
 <div id="photo-grid" class="grid packery" style="position: relative; height: 0px;">
