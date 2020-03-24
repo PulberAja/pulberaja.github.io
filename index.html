@@ -1,5 +1,43 @@
 <head>
-    <style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="DITnlCBvZWwMqvcraZxgw2n3OkmWbNWn2vqdyy0ci8ZT43BRCCP8f/1lq3GhVMicPHgPobq492kfEDY7L5CJqQ==">
+
+<title>Mobile navigation  animation</title>
+<link rel="stylesheet" media="screen" href="https://static.codepen.io/assets/fullpage/fullpage-4de243a40619a967c0bf13b95e1ac6f8de89d943b7fc8710de33f681fe287604.css">
+<link rel="stylesheet" media="all" href="https://static.codepen.io/assets/global/global-a95b93667d4c3efaa9fd3204567225fd3a76cdefc4a42d44529a0d72d6a3928d.css">
+<link rel="stylesheet" media="screen" href="https://static.codepen.io/assets/packs/css/everypage-525dd650.css">
+<link rel="stylesheet" media="all" href="https://static.codepen.io/assets/page/page-2de247a1d3c290a78a5ab5a736253033cac2fafe9c6a6fd558a9d44bdb9a5a14.css">
+<link rel="stylesheet" media="all" href="https://static.codepen.io/assets/editor/editor-4b9455e47e680eb3ba4d576bce3169777f15a82bd0a30b719d5c5a229055432f.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic" rel="stylesheet">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@CodePen">
+<meta name="twitter:title" content="Mobile navigation  animation">
+<meta name="twitter:description" content="Mobile navigation open and close animations using GSAP TweenMax and TimelineMax. Still needs some transition tweaking......">
+<meta name="twitter:image" content="https://screenshot.codepen.io/205012.aNYWKE.ce0cf5de-cb91-4c4a-b76c-d2b69de9bfa3.png">
+<meta name="twitter:creator" content="@karlovidek">
+<meta property="og:image" content="https://codepen.io/karlovidek/pen/aNYWKE/image/large.png" itemprop="thumbnailUrl">
+<meta property="og:title" content="Mobile navigation  animation">
+<meta property="og:url" content="https://codepen.io/karlovidek/details/aNYWKE">
+<meta property="og:site_name" content="CodePen">
+<meta property="og:description" content="Mobile navigation open and close animations using GSAP TweenMax and TimelineMax. Still needs some transition tweaking......">
+<link rel="alternate" type="application/json+oembed" href="https://codepen.io/api/oembed?url=https%3A%2F%2Fcodepen.io%2Fkarlovidek%2Fpen%2FaNYWKE&amp;format=json" title="Mobile navigation  animation">
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+<script async="" crossorigin="anonymous" src="https://edge.fullstory.com/s/fs.js"></script><script>/* Firefox needs this to prevent FOUC. Wow. */</script>
+<script charset="utf-8" src="https://static.codepen.io/assets/packs/js/18-34657a03997d87aee6b6.chunk.js"></script><script charset="utf-8" src="https://static.codepen.io/assets/packs/js/firebase-78354cbf16de63431b3a.chunk.js"></script></head><html lang="en"><head>
+<meta charset="UTF-8">
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+<title>CodePen - Mobile navigation  animation</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+<style>
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700);
 body {
   background-color: #3c3c3c;
@@ -255,53 +293,67 @@ body {
   left: 20px;
 }
 </style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
 </head>
-<body>
+<body translate="no">
+
 <div class="container">
-  <span class="menu-trigger">
-    <i class="menu-trigger-bar top"></i>
-    <i class="menu-trigger-bar middle"></i>
-    <i class="menu-trigger-bar bottom"></i>
-  </span>
-  <span class="close-trigger">
-    <i class="close-trigger-bar left"></i>
-    <i class="close-trigger-bar right"></i>
-  </span>
-  <span class="logo">
-    <span>
-      ⬢
-      <i class="logo-title">UI</i>
-      <i class="logo-badge">6</i>
-    </span>
-  </span>
-  <div class="inner-container">
-      <i class="menu-bg top"></i>
-      <i class="menu-bg middle"></i>
-      <i class="menu-bg bottom"></i>
-    <div class="menu-container">
-      <ul class="menu">
-        <li>
-          <a href="#">Login</a>
-        </li>
-        <li>
-          <a href="#">Create account</a>
-        </li>
-        <li>
-          <a href="#">Support</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-      </ul>
-    </div>
-  </div>
+<span class="menu-trigger" style="visibility: visible;">
+<i class="menu-trigger-bar top" style="transform: matrix(0.70711, -0.7071, 0.7071, 0.70711, 0, 0);"></i>
+<i class="menu-trigger-bar middle" style="transform: matrix(0.70711, -0.7071, 0.7071, 0.70711, 0, 0);"></i>
+<i class="menu-trigger-bar bottom" style="transform: matrix(0.70711, -0.7071, 0.7071, 0.70711, 0, 0);"></i>
+</span>
+<span class="close-trigger" style="z-index: 5;">
+<i class="close-trigger-bar left" style="transform: matrix(0.70711, -0.7071, 0.7071, 0.70711, 100, -100);"></i>
+<i class="close-trigger-bar right" style="transform: matrix(0.70711, 0.7071, -0.7071, 0.70711, -100, -100);"></i>
+</span>
+<span class="logo" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0); z-index: 26;">
+<span>
+⬢
+<i class="logo-title">UI</i>
+<i class="logo-badge">6</i>
+</span>
+</span>
+<div class="inner-container">
+<i class="menu-bg top" style="transform: translate(0%, -113%) matrix(0.70711, -0.7071, 0.7071, 0.70711, -243.98, 0); background-color: rgb(255, 255, 255);"></i>
+<i class="menu-bg middle" style="transform: matrix(0.70711, -0.7071, 0, 0, 0, 0); background-color: rgb(255, 255, 255);"></i>
+<i class="menu-bg bottom" style="transform: translate(0%, 23%) matrix(0.70711, -0.7071, 0.7071, 0.70711, 40.3051, 0); background-color: rgb(255, 255, 255);"></i>
+<div class="menu-container">
+<ul class="menu" style="visibility: hidden; opacity: 0; transform: matrix(1, 0, 0, 1, 0, 20);">
+<li>
+<a href="#">Login</a>
+</li>
+<li>
+<a href="#">Create account</a>
+</li>
+<li>
+<a href="#">Support</a>
+</li>
+<li>
+<a href="#">About</a>
+</li>
+</ul>
 </div>
-<!-- -->
-<div id='links'>
-<a id='twitter' href="https://twitter.com/karlovidek" target="_blank"><span class='fa fa-twitter'></span></a>
-<div id='pens'><a href="https://codepen.io/karlovidek/" target="_blank"><span class='fa fa-codepen'></span></a> my other Pens</div>
 </div>
-	<script>//OPEN TRIGGER
+</div>
+
+<div id="links">
+<a id="twitter" href="https://twitter.com/karlovidek" target="_blank"><span class="fa fa-twitter"></span></a>
+<div id="pens"><a href="https://codepen.io/karlovidek/" target="_blank"><span class="fa fa-codepen"></span></a> my other Pens</div>
+</div>
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TimelineMax.min.js"></script>
+<script id="rendered-js">
+//OPEN TRIGGER
 var openTrigger = $('.menu-trigger');
 var openTriggerTop = openTrigger.find('.menu-trigger-bar.top');
 var openTriggerMiddle = openTrigger.find('.menu-trigger-bar.middle');
@@ -323,126 +375,130 @@ var menuMiddle = $('.menu-bg.middle');
 var menuBottom = $('.menu-bg.bottom');
 
 //TL
-var tlOpen = new TimelineMax({paused: true});
-var tlClose = new TimelineMax({paused: true});
+var tlOpen = new TimelineMax({ paused: true });
+var tlClose = new TimelineMax({ paused: true });
 
 //OPEN TIMELINE
-tlOpen.add("preOpen")
-  .to(logo, 0.4, {
-            scale: 0.8,
-            opacity: 0,
-            ease: Power2.easeOut
-        }, "preOpen")
-.to(openTriggerTop, 0.4, {
-  x: "+80px", y: "-80px", delay: 0.1, ease: Power4.easeIn, onComplete: function() {
-    closeTrigger.css('z-index','25');
-  }
-}, "preOpen")
-.to(openTriggerMiddle, 0.4, {
+tlOpen.add("preOpen").
+to(logo, 0.4, {
+  scale: 0.8,
+  opacity: 0,
+  ease: Power2.easeOut },
+"preOpen").
+to(openTriggerTop, 0.4, {
+  x: "+80px", y: "-80px", delay: 0.1, ease: Power4.easeIn, onComplete: function () {
+    closeTrigger.css('z-index', '25');
+  } },
+"preOpen").
+to(openTriggerMiddle, 0.4, {
   x: "+=80px", y: "-=80px", ease: Power4.easeIn,
-  onComplete: function() {
-    openTrigger.css('visibility','hidden');
-  }
-}, "preOpen")
-.to(openTriggerBottom, 0.4, {
-  x: "+=80px", y: "-=80px", delay: 0.2, ease: Power4.easeIn
-}, "preOpen")
-.add("open", "-=0.4")
-.to(menuTop, 0.8, {
+  onComplete: function () {
+    openTrigger.css('visibility', 'hidden');
+  } },
+"preOpen").
+to(openTriggerBottom, 0.4, {
+  x: "+=80px", y: "-=80px", delay: 0.2, ease: Power4.easeIn },
+"preOpen").
+add("open", "-=0.4").
+to(menuTop, 0.8, {
   y: "13%",
-  ease: Power4.easeInOut
-}, "open")
-.to(menuMiddle, 0.8, {
+  ease: Power4.easeInOut },
+"open").
+to(menuMiddle, 0.8, {
   scaleY: 1,
-  ease: Power4.easeInOut
-}, "open")
-.to(menuBottom, 0.8, {
+  ease: Power4.easeInOut },
+"open").
+to(menuBottom, 0.8, {
   y: "-114%",
-  ease: Power4.easeInOut
-}, "open")
-.fromTo(menu, 0.6, {
-  y: 30, opacity: 0, visibility: 'hidden'
-}, {
-  y: 0, opacity: 1, visibility: 'visible', ease: Power4.easeOut
-}, "-=0.2")
-.add("preClose", "-=0.8")
-.to(closeTriggerLeft, 0.8, {
-  x: "-=100px", y: "+=100px", ease: Power4.easeOut
-}, "preClose")
-.to(closeTriggerRight, 0.8, {
-  x: "+=100px", y: "+=100px", delay: 0.2, ease: Power4.easeOut
-}, "preClose");
+  ease: Power4.easeInOut },
+"open").
+fromTo(menu, 0.6, {
+  y: 30, opacity: 0, visibility: 'hidden' },
+{
+  y: 0, opacity: 1, visibility: 'visible', ease: Power4.easeOut },
+"-=0.2").
+add("preClose", "-=0.8").
+to(closeTriggerLeft, 0.8, {
+  x: "-=100px", y: "+=100px", ease: Power4.easeOut },
+"preClose").
+to(closeTriggerRight, 0.8, {
+  x: "+=100px", y: "+=100px", delay: 0.2, ease: Power4.easeOut },
+"preClose");
 
 //CLOSE TIMELINE
-tlClose.add("close")
-  .to(menuTop, 0.2, {
-  backgroundColor: "#6295ca", ease: Power4.easeInOut, onComplete: function() {
-    logo.css('z-index','26');
-    closeTrigger.css('z-index','5');
- openTrigger.css('visibility','visible');
-  }
-}, "close")
-.to(menuMiddle, 0.2, {
-  backgroundColor: "#6295ca", ease: Power4.easeInOut
-}, "close") 
-.to(menuBottom, 0.2, {
-  backgroundColor: "#6295ca", ease: Power4.easeInOut
-}, "close")
-  .to(menu, 0.6, {
-  y: 20, opacity: 0, ease: Power4.easeOut, onComplete: function() {
-    menu.css('visibility','hidden');
-  }
-}, "close")
-.to(logo, 0.8, {
-  scale: 1, opacity: 1, ease: Power4.easeInOut
-}, "close", "+=0.2")
-.to(menuTop, 0.8, {
+tlClose.add("close").
+to(menuTop, 0.2, {
+  backgroundColor: "#6295ca", ease: Power4.easeInOut, onComplete: function () {
+    logo.css('z-index', '26');
+    closeTrigger.css('z-index', '5');
+    openTrigger.css('visibility', 'visible');
+  } },
+"close").
+to(menuMiddle, 0.2, {
+  backgroundColor: "#6295ca", ease: Power4.easeInOut },
+"close").
+to(menuBottom, 0.2, {
+  backgroundColor: "#6295ca", ease: Power4.easeInOut },
+"close").
+to(menu, 0.6, {
+  y: 20, opacity: 0, ease: Power4.easeOut, onComplete: function () {
+    menu.css('visibility', 'hidden');
+  } },
+"close").
+to(logo, 0.8, {
+  scale: 1, opacity: 1, ease: Power4.easeInOut },
+"close", "+=0.2").
+to(menuTop, 0.8, {
   y: "-113%",
-  ease: Power4.easeInOut
-}, "close", "+=0.2")
-.to(menuMiddle, 0.8, {
+  ease: Power4.easeInOut },
+"close", "+=0.2").
+to(menuMiddle, 0.8, {
   scaleY: 0,
-  ease: Power4.easeInOut
-}, "close", "+=0.2")
-.to(menuBottom, 0.8, {
+  ease: Power4.easeInOut },
+"close", "+=0.2").
+to(menuBottom, 0.8, {
   y: "23%",
   ease: Power4.easeInOut,
-  onComplete: function() {
-    menuTop.css('background-color','#ffffff');
-    menuMiddle.css('background-color','#ffffff');
-    menuBottom.css('background-color','#ffffff');
-  }
-}, "close", "+=0.2")
-.to(closeTriggerLeft, 0.2, {
-  x: "+=100px", y: "-=100px", ease: Power4.easeIn
-}, "close")
-.to(closeTriggerRight, 0.2, {
-  x: "-=100px", y: "-=100px", delay: 0.1, ease: Power4.easeIn
-}, "close")
-.to(openTriggerTop, 1, {
-  x: "-=80px", y: "+=80px", delay: 0.2, ease: Power4.easeOut
-}, "close")
-.to(openTriggerMiddle, 1, {
-  x: "-=80px", y: "+=80px", ease: Power4.easeOut
-}, "close")
-.to(openTriggerBottom, 1, {
-  x: "-=80px", y: "+=80px", delay: 0.1, ease: Power4.easeOut
-}, "close");
+  onComplete: function () {
+    menuTop.css('background-color', '#ffffff');
+    menuMiddle.css('background-color', '#ffffff');
+    menuBottom.css('background-color', '#ffffff');
+  } },
+"close", "+=0.2").
+to(closeTriggerLeft, 0.2, {
+  x: "+=100px", y: "-=100px", ease: Power4.easeIn },
+"close").
+to(closeTriggerRight, 0.2, {
+  x: "-=100px", y: "-=100px", delay: 0.1, ease: Power4.easeIn },
+"close").
+to(openTriggerTop, 1, {
+  x: "-=80px", y: "+=80px", delay: 0.2, ease: Power4.easeOut },
+"close").
+to(openTriggerMiddle, 1, {
+  x: "-=80px", y: "+=80px", ease: Power4.easeOut },
+"close").
+to(openTriggerBottom, 1, {
+  x: "-=80px", y: "+=80px", delay: 0.1, ease: Power4.easeOut },
+"close");
 
 //EVENTS
-openTrigger.on('click', function(){
-  if(tlOpen.progress() < 1){
-                tlOpen.play();
-            } else {
-                tlOpen.restart();
-            }
+openTrigger.on('click', function () {
+  if (tlOpen.progress() < 1) {
+    tlOpen.play();
+  } else {
+    tlOpen.restart();
+  }
 });
-       
-closeTrigger.on('click', function(){
-  if(tlClose.progress() < 1){
-                tlClose.play();
-            } else {
-                tlClose.restart();
-            }
-});</script>
-    </body>
+
+closeTrigger.on('click', function () {
+  if (tlClose.progress() < 1) {
+    tlClose.play();
+  } else {
+    tlClose.restart();
+  }
+});
+//# sourceURL=pen.js
+    </script>
+
+
+</body></html>
